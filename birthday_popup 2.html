@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh; /* Ensures the body takes the full height of the screen */
+            margin: 0;
+            background-image: url('https://i.pinimg.com/736x/bb/05/d7/bb05d748a36f8bf68dcf5112064a43fb.jpg'); /* Update with your image path */
+            background-size: cover; /* Ensures the image covers the full screen */
+            background-position: center center; /* Centers the image both vertically and horizontally */
+            background-repeat: no-repeat; /* Prevents image repetition */
+            text-align: center;
+            color: white;/* Make text white for better visibility on dark backgrounds */
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(242, 61, 191, 0.9); /* Transparent yellow background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .popup h1 {
+            margin-bottom: 20px;
+        }
+
+        .popup button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .title {
+            font-size: 36px;
+            color: #fff; /* White text for title */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">Welcome to the Birthday Celebration!</h1>
+    <button onclick="showPopup()">Click here to see the birthday message</button>
+</div>
+
+<div class="popup" id="birthdayPopup">
+    <h1>Saurabh Brazzers!</h1>
+    <p>Saurabh ki biwi Kharido aandolan>> Vese.....Andar Kya Pehna Hai!</p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<script>
+    function showPopup() {
+        document.getElementById('birthdayPopup').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('birthdayPopup').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
